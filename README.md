@@ -1,7 +1,7 @@
 <h1 style="font-size:40px;">About Project</h1>
 <ul style="list-style-type:'▶ ';">
     <li><b style="color:cadetblue;">Name : </b>Qrcode Maker</li>
-    <li><b style="color:cadetblue;">Languages : </b>HTML, CSS, Javascript, python</li>
+    <li><b style="color:cadetblue;">Languages : </b>HTML, CSS, Javascript, python, ejs</li>
 </ul>
 <h4>
 	This project is a qrcode maker where you can generate qrcode in svg format and download then. You can also customize the colors
