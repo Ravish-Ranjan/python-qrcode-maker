@@ -1,0 +1,124 @@
+* {
+	padding: 0;
+	margin: 0;
+	/* outline: 1px solid limegreen; */
+	box-sizing: border-box;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+		Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+		sans-serif;
+}
+body {
+	background-color: #23272e;
+	display: flex;
+	flex-wrap: wrap;
+	height: 100dvh;
+	justify-content: center;
+	gap: 1rem;
+	align-items: center;
+	align-content: center;
+}
+#show {
+	width: 90vmin;
+	aspect-ratio: 1/1;
+	border-radius: 1rem 1rem 0.5rem 0.5rem;
+	background-color: #ffffff22;
+	display: grid;
+	place-items: center;
+	position: relative;
+}
+#show > span {
+    color: white;
+    display: grid;
+    place-items: center;
+	font-style: italic;
+	font-size: 1.25rem;
+}
+svg {
+	max-height: 95%;
+	max-width: 95%;
+	object-fit: contain;
+}
+path {
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+}
+form {
+	width: 90vmin;
+	display: flex;
+	/* aspect-ratio: 5/2; */
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	gap: 1rem;
+	border-radius: 0.5rem 0.5rem 1rem 1rem;
+	padding: 0.5rem;
+	background-color: #ffffff22;
+}
+.colors {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+	width: 100%;
+	height: 40%;
+}
+label {
+	width: 48%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100%;
+	justify-content: space-between;
+}
+span {
+	color: white;
+	font-size: larger;
+	height: 30%;
+}
+input[type="text"],
+input[type="text"]:focus {
+	background-color: transparent;
+	color: white;
+}
+input[type="color"] {
+	padding: 2px;
+	width: 100%;
+}
+.btns {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	gap: 0.5rem;
+}
+#sub {
+	flex: 1 1 69%;
+}
+.ctrl {
+	color: white;
+	flex: 1 1 14%;
+	/* aspect-ratio: 9/5; */
+}
+.ctrl > img {
+	height: 100%;
+	aspect-ratio: 1/1;
+}
+.custom-loader {
+	width: 100px;
+	height: 100px;
+	--c: radial-gradient(farthest-side, #1df48d 92%, #0000);
+	background: var(--c) 50% 0, var(--c) 50% 100%, var(--c) 100% 50%,
+		var(--c) 0 50%;
+	background-size: 24px 24px;
+	background-repeat: no-repeat;
+	animation: s7 2s infinite;
+	position: absolute;
+	display: none;
+}
+@keyframes s7 {
+	to {
+		transform: rotate(0.5turn);
+	}
+}
