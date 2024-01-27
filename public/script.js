@@ -29,8 +29,6 @@ function downloadSVG() {
 $(document).ready(() => {
 	$("form").on("submit", (e) => {
 		e.preventDefault();
-		$("#show-prompt").css({"display":"none"});
-		$(".custom-loader").css({"display":"block"});
 		$.ajax({
 			url: "/makeqr",
 			type: "POST",
@@ -40,9 +38,9 @@ $(document).ready(() => {
 				bgcolor: $("#bg-color").val(),
 			},
 			success: function (data, status, xhr) {
-				$("#show").html(data["data"]);
 				svg = data["data"];
-				$(".custom-loader").css({"display":"none"});
+				$("#show").html(svg);
+				// $("#show").css({"display":"block"});	
 				$("button").prop({ disabled: false });
 			},
 			error: function (xhr, status, err) {

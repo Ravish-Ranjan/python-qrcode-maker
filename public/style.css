@@ -22,16 +22,11 @@ body {
 	aspect-ratio: 1/1;
 	border-radius: 1rem 1rem 0.5rem 0.5rem;
 	background-color: #ffffff22;
+	color: white;
 	display: grid;
 	place-items: center;
-	position: relative;
-}
-#show > span {
-    color: white;
-    display: grid;
-    place-items: center;
-	font-style: italic;
 	font-size: 1.25rem;
+	font-style: italic;
 }
 svg {
 	max-height: 95%;
@@ -81,10 +76,21 @@ input[type="text"],
 input[type="text"]:focus {
 	background-color: transparent;
 	color: white;
+	border-color: #0dcaf0;
+}
+input[type="text"]::placeholder{
+	color: white;
 }
 input[type="color"] {
 	padding: 2px;
 	width: 100%;
+	background-color: #0dcaf0;
+}
+input[type="submit"]{
+	--bs-btn-bg: #0dcaf0;
+	font-size: 1.2rem;
+	color: black;
+	font-weight: 500;
 }
 .btns {
 	display: flex;
@@ -102,13 +108,13 @@ input[type="color"] {
 	/* aspect-ratio: 9/5; */
 }
 .ctrl > img {
-	height: 100%;
+	height: 4vh;
 	aspect-ratio: 1/1;
 }
 .custom-loader {
 	width: 100px;
 	height: 100px;
-	--c: radial-gradient(farthest-side, #1df48d 92%, #0000);
+	--c: radial-gradient(farthest-side, #0dcaf0 92%, #0000);
 	background: var(--c) 50% 0, var(--c) 50% 100%, var(--c) 100% 50%,
 		var(--c) 0 50%;
 	background-size: 24px 24px;
